@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "result": "aztros:cut_diamond",
+  "count": 1
+}

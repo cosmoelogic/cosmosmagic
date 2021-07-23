@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aztros:cut_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "aztros:cut_diamond",
+    "count": 9
+  }
+}

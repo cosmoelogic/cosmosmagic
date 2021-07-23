@@ -18,7 +18,17 @@ public class ModBlocks {
             .strength(5.0f, 30.0f)
             .sounds(BlockSoundGroup.METAL));
 
+    public static final Block WAXED_DIAMOND_BLOCK = new Block(FabricBlockSettings
+            .of(Material.METAL)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .breakByHand(false)
+            .requiresTool()
+            .strength(5.0f, 30.0f)
+            .sounds(BlockSoundGroup.METAL)
+            .slipperiness(0.9f));
+
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "cut_diamond_block"), CUT_DIAMOND_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "waxed_diamond_block"), WAXED_DIAMOND_BLOCK);
     }
 }

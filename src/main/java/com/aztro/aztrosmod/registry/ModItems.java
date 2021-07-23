@@ -11,13 +11,16 @@ public class ModItems {
     public static final Item CUT_DIAMOND = new Item(new Item.Settings().group(aztrosmod.ITEM_GROUP));
     public static final Item CUT_DIAMOND_BLOCK = new BlockItem(ModBlocks.CUT_DIAMOND_BLOCK, new Item.Settings().group(aztrosmod.ITEM_GROUP));
 
+    //waxed diamond
+    public static final Item WAXED_DIAMOND_BLOCK = new BlockItem(ModBlocks.WAXED_DIAMOND_BLOCK, new Item.Settings().group(aztrosmod.ITEM_GROUP));
+
     //crude diamond
     public static final Item CRUDE_DIAMOND = new Item(new Item.Settings().group(aztrosmod.ITEM_GROUP));
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "cut_diamond"), CUT_DIAMOND);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "cut_diamond_block"), CUT_DIAMOND_BLOCK);
-
+        Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "waxed_diamond_block"), WAXED_DIAMOND_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "crude_diamond"), CRUDE_DIAMOND);
     }
 }
