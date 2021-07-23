@@ -1,6 +1,10 @@
 {
   "item.aztros.cut_diamond": "Cut Diamond",
   "item.aztros.crude_diamond": "Crude Diamond",
+  "item.aztros.studded_leather_helmet": "Diamond-Studded Leather Helmet",
+  "item.aztros.studded_leather_chestplate": "Diamond-Studded Leather Chestplate",
+  "item.aztros.studded_leather_leggings": "Diamond-Studded Leather Leggings",
+  "item.aztros.studded_leather_boots": "Diamond-Studded Leather Boots",
   "block.aztros.cut_diamond_block": "Cut Diamond Block",
   "block.aztros.waxed_diamond_block": "Waxed Diamond Block",
   "itemGroup.aztros.general": "Aztro's Mod"

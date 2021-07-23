@@ -1,5 +1,6 @@
 package com.aztro.aztrosmod;
 
+import com.aztro.aztrosmod.registry.ModArmor;
 import com.aztro.aztrosmod.registry.ModBlocks;
 import com.aztro.aztrosmod.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -28,6 +29,7 @@ public class aztrosmod implements ModInitializer {
         System.out.println("Hello, Minecraft!");
         ModItems.registerItems();
         ModBlocks.registerBlocks();
+        ModArmor.register();
     }
 
 //THIS IS NOT NEEDED RIGHT NOW BUT MAY HELP COMPATIBILITY LATER ON
