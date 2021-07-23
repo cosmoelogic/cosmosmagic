@@ -1,4 +1,6 @@
 {
   "item.aztros.cut_diamond": "Cut Diamond",
-  "block.aztros.cut_diamond_block": "Cut Diamond Block"
+  "item.aztros.crude_diamond": "Crude Diamond",
+  "block.aztros.cut_diamond_block": "Cut Diamond Block",
+  "itemGroup.aztros.general": "Aztro's Mod"
 }
