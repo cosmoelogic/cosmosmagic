@@ -1,20 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "D D",
-    "# #"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:leather"
-    },
-    "D": {
-      "item": "minecraft:diamond"
-    }
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:leather_leggings"
+  },
+  "addition": {
+    "item": "minecraft:diamond"
   },
   "result": {
-    "item": "aztros:studded_leather_leggings",
-    "count": 1
+    "item": "aztros:studded_leather_leggings"
   }
 }
