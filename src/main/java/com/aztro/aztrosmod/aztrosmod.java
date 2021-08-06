@@ -32,13 +32,13 @@ public class aztrosmod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println(String.format("%s: Thanks for using Aztro's Mod", MOD_ID));
+        System.out.printf("%s: Thanks for using Aztro's Mod%n", MOD_ID);
         ModItems.registerItems();
-        System.out.println(String.format("%s: Items registered.", MOD_ID));
+        System.out.printf("%s: Items registered.%n", MOD_ID);
         ModBlocks.registerBlocks();
-        System.out.println(String.format("%s: Blocks registered.", MOD_ID));
+        System.out.printf("%s: Blocks registered.%n", MOD_ID);
         ModArmor.register();
-        System.out.println(String.format("%s: Armor registered.", MOD_ID));
+        System.out.printf("%s: Armor registered.%n", MOD_ID);
     }
 
 //THIS IS NOT NEEDED RIGHT NOW BUT MAY HELP COMPATIBILITY LATER ON
