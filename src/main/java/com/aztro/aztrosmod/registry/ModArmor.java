@@ -15,7 +15,7 @@ public class ModArmor {
 
     public static class StuddedLeather implements ArmorMaterial {
         private static final int[] BASE_DURABILITY = new int[]{76, 88, 82, 60}; //boots, leggings, chestplate, helmet ---- divided by 2
-        private static final int[] PROTECTION_VALUES = new int[]{2, 5, 4, 1}; //boots, chestplate, leggings, helmet
+        private static final int[] PROTECTION_VALUES = new int[]{2, 4, 5, 1}; //boots, leggings, chestplate, helmet
 
         @Override
         public int getDurability(EquipmentSlot slot) {
