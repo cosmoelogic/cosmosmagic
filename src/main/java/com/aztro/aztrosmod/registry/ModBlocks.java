@@ -32,4 +32,3 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "waxed_diamond_block"), WAXED_DIAMOND_BLOCK);
     }
 }
-// boobie
