@@ -14,8 +14,8 @@ import net.minecraft.util.registry.Registry;
 public class ModArmor {
 
     public static class StuddedLeather implements ArmorMaterial {
-        private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-        private static final int[] PROTECTION_VALUES = new int[]{3, 7, 6, 3};
+        private static final int[] BASE_DURABILITY = new int[]{76, 88, 82, 60}; //boots, leggings, chestplate, helmet ---- divided by 2
+        private static final int[] PROTECTION_VALUES = new int[]{2, 5, 4, 1}; //boots, chestplate, leggings, helmet
 
         @Override
         public int getDurability(EquipmentSlot slot) {

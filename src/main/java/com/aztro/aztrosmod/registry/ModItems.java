@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item CRUDE_DIAMOND = new Item(new Item.Settings().group(aztrosmod.ITEM_GROUP));
 
     //jerky
-    public static final Item ZOMBIE_JERKY = new Item(new Item.Settings().group(aztrosmod.ITEM_GROUP).food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).build()));
+    public static final Item ZOMBIE_JERKY = new Item(new Item.Settings().group(aztrosmod.ITEM_GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).build()));
     
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "cut_diamond"), CUT_DIAMOND);
@@ -29,7 +29,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "crude_diamond"), CRUDE_DIAMOND);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "zombie_jerky"), ZOMBIE_JERKY);
         FuelRegistry.INSTANCE.add(Items.MUSHROOM_STEM, 200);
-        FuelRegistry.INSTANCE.add(Items.BROWN_MUSHROOM_BLOCK, 50);
-        FuelRegistry.INSTANCE.add(Items.RED_MUSHROOM_BLOCK, 50);
+        FuelRegistry.INSTANCE.add(Items.BROWN_MUSHROOM_BLOCK, 200);
+        FuelRegistry.INSTANCE.add(Items.RED_MUSHROOM_BLOCK, 200);
     }
 }
