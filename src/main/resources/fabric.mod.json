@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Aztro's Mod",
-  "description": "This is a multipurpose mod",
+  "description": "This mod is intended to add things to Minecraft that just make sense.\n\n",
   "authors": [
     "Aztro"
   ],
@@ -13,7 +13,7 @@
     "sources": ""
   },
 
-  "license": "mit",
+  "license": "All Rights Reserved",
   "icon": "assets/aztros/icon.png",
 
   "environment": "*",
