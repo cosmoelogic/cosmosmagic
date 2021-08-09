@@ -4,16 +4,9 @@ import com.aztro.aztrosmod.registry.ModArmor;
 import com.aztro.aztrosmod.registry.ModBlocks;
 import com.aztro.aztrosmod.registry.ModItems;
 import com.aztro.aztrosmod.registry.ModTools;
-import com.aztro.aztrosmod.UpdateChecker;
-import com.aztro.aztrosmod.ConfigManager;
-import net.fabricmc.api.ClientModInitializer;
+import com.aztro.aztrosmod.update.UpdateChecker;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.fabric.api.event.*;
-import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
-import net.minecraft.block.BlockState;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
@@ -51,7 +44,6 @@ public class aztrosmod implements ModInitializer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        ConfigManager.Manage();
     }
 
 //THIS IS NOT NEEDED RIGHT NOW BUT MAY HELP COMPATIBILITY LATER ON
