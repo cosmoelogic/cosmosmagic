@@ -17,8 +17,8 @@ public class ConfigManager {
         }
     }
     public static boolean CheckExistace() {
-        if (System.getProperty("os.name").toLowerCase().contains("windows")) {
-            configfolder = System.getenv("APPDATA") + "\\.minecraft\\config\\";
+        if (System.getProperty("os.name").toLowerCase().contains("win")) {
+            configfolder = System.getProperty("user.home") + "\\Appdata\\Roaming\\.minecraft\\config\\";
         } else {
             configfolder = System.getProperty("user.home") + "\\.minecraft\\config\\";
         }

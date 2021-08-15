@@ -32,12 +32,12 @@ public class ModTools {
         }
         @Override
         public float getMiningSpeedMultiplier() {
-            return 8.0f;
+            return 7.0f;
         }
 
     }
 
-    public class DiamondTippedItems {
+    public static class  DiamondTippedItems {
         public static ToolItem DIAMOND_TIPPED_PICKAXE = new DiamondTippedPickaxe(DiamondTippedMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(aztrosmod.ITEM_GROUP));
     }
     public static class DiamondTippedPickaxe extends PickaxeItem {

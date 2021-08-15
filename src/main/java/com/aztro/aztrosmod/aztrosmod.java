@@ -9,9 +9,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.*;
-
-import java.io.IOException;
+import net.minecraft.util.Identifier;
 
 public class aztrosmod implements ModInitializer {
 
@@ -39,11 +37,7 @@ public class aztrosmod implements ModInitializer {
         System.out.printf("%s: Armor registered.%n", MOD_ID);
         ModTools.register();
         System.out.printf("%s: Tools registered.%n", MOD_ID);
-        try {
-            UpdateChecker.checkForUpdates();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        UpdateChecker.checkForUpdates();
     }
 
 //THIS IS NOT NEEDED RIGHT NOW BUT MAY HELP COMPATIBILITY LATER ON
