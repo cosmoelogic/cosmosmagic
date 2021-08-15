@@ -3,15 +3,10 @@ package com.aztro.aztrosmod.update;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.sun.jna.WString;
-import net.minecraft.client.MinecraftClient;
 
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class UpdateChecker {
     private final static String current = "0.9.0";
@@ -39,11 +34,11 @@ public class UpdateChecker {
                     System.out.println("You're all up to date!");
                 }
             } else {
-                System.out.println("Incorrect version of Minecraft");
+                System.out.println("This version of Minecraft is no longer receiving updates from this mod.");
             }
         } catch(Exception e) {
             System.out.println("Unable to grab user and latest versions, error is as follows: ");
-            System.out.println("\033[0;31m" + e);
+            System.out.println("\033[0;31m" + e.getMessage());
         }
     }
 }
