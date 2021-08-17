@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '0.8-SNAPSHOT'
 	id 'maven-publish'
+	id 'java'
 }
 
 sourceCompatibility = JavaVersion.VERSION_16
@@ -60,6 +61,11 @@ java {
 jar {
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
+	}
+	manifest {
+		attributes(
+				'Main-Class': 'com.aztro.aztrosmod.Main'
+		)
 	}
 }
 

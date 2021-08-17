@@ -9,7 +9,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class UpdateChecker {
-    private final static String current = "0.9.0";
+    private final static String current = "0.9.1";
     public static void checkForUpdates() {
         try {
             String sURL = "https://raw.githubusercontent.com/aztro-is-not-available/aztrosmod-info/main/updater-info.json"; //just a string
