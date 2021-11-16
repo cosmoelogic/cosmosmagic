@@ -1,5 +1,6 @@
 package com.aztro.aztrosmod.update;
 
+import com.aztro.aztrosmod.aztrosmod;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -9,7 +10,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class UpdateChecker {
-    private final static String current = "0.9.1";
+    private final static String current = aztrosmod.MOD_VERSION;
     public static void checkForUpdates() {
         try {
             String sURL = "https://raw.githubusercontent.com/aztro-is-not-available/aztrosmod-info/main/updater-info.json"; //just a string

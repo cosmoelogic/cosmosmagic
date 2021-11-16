@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 public class aztrosmod implements ModInitializer {
 
     public static final String MOD_ID = "aztros";
+    public static final String MOD_VERSION = "0.9.2";
 
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
             new Identifier(MOD_ID, "general"),

@@ -27,8 +27,17 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.METAL)
             .slipperiness(0.9f));
 
+    public static final Block GLOWSTONE_BRICKS = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .breakByTool(FabricToolTags.PICKAXES, 1)
+            .breakByHand(true)
+            .strength(1.5f, 30.0f)
+            .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+            .luminance(14));
+
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "cut_diamond_block"), CUT_DIAMOND_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "waxed_diamond_block"), WAXED_DIAMOND_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "glowstone_bricks"), GLOWSTONE_BRICKS);
     }
 }

@@ -1,8 +1,3 @@
-/*
- * This file is part of the aztro Client distribution (https://github.com/aztroDevelopment/aztro-client/).
- * Copyright (c) 2021 aztro Development.
- */
-
 package com.aztro.aztrosmod;
 
 import javax.swing.*;
