@@ -21,12 +21,6 @@ public class aztrosmod implements ModInitializer {
             () -> new ItemStack(ModItems.CUT_DIAMOND_BLOCK)
     );
 
-//    private static final Identifier DIAMOND_ORE_LOOT_TABLE_ID = new Identifier("minecraft", "blocks/diamond_ore");
-//    private static final Identifier DEEPSLATE_DIAMOND_ORE_LOOT_TABLE_ID = new Identifier("minecraft", "blocks/deepslate_diamond_ore");
-//    private static final Identifier CUT_DIAMOND_BLOCK_LOOT_TABLE_ID = new Identifier(MOD_ID, "blocks/cut_diamond_block");
-
-//    MinecraftClient mc = MinecraftClient.getInstance();
-
     @Override
     public void onInitialize() {
         System.out.printf("%s: Thanks for using Aztro's Mod%n", MOD_ID);
@@ -40,14 +34,4 @@ public class aztrosmod implements ModInitializer {
         System.out.printf("%s: Tools registered.%n", MOD_ID);
         UpdateChecker.checkForUpdates();
     }
-
-//THIS IS NOT NEEDED RIGHT NOW BUT MAY HELP COMPATIBILITY LATER ON
-//    private void modifyLootTables() {
-//        LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
-//            if (DIAMOND_ORE_LOOT_TABLE_ID.equals(id)) {
-//                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder().rolls(ConstantLootTableRange.create())
-//            }
-//        }));
-//    }
-
 }
