@@ -12,7 +12,7 @@ import java.net.URLConnection;
 import net.minecraft.MinecraftVersion;
 
 public class UpdateChecker {
-    private final static String current = aztrosmod.MOD_VERSION;
+    private static final String MOD_VERSION = aztrosmod.MOD_VERSION;
     public static void checkForUpdates() {
         try {
             String sURL = "https://raw.githubusercontent.com/aztro-is-not-available/aztrosmod-info/main/updater-info.json"; //just a string
@@ -22,28 +22,24 @@ public class UpdateChecker {
             URLConnection request = url.openConnection();
             request.connect();
 
-            // Convert to a JSON object to print data
-            JsonParser jp = new JsonParser(); //from gson
-            JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent())); //Convert the input stream to a json element
+            JsonElement root = JsonParser.parseReader(new InputStreamReader((InputStream) request.getContent())); //Convert the input stream to a json element
             JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object.
             String versions = rootobj.get("versions").getAsString();
             if (versions.contains(MinecraftVersion.CURRENT.getName())) {
                 String latest = rootobj.get("latest").getAsString();
-                System.out.println("Latest version: " + latest);
-                if (!current.equals(latest)) {
-                    System.out.println("\033[0;31m" + "You are using outdated version: " + current);
-                    //MinecraftClient.getInstance().openScreen(new UpdateScreen(new UpdateGui()));
+                System.out.printf("Latest version: %s%n", latest);
+                if (!MOD_VERSION.equals(latest)) {
+                    System.out.printf("\033[0;31m" + "You are using outdated version: %s%n", MOD_VERSION);
                 } else {
                     System.out.println("You're all up to date!");
                 }
             } else {
                 System.out.println("This version of Minecraft is no longer receiving updates from this mod.");
-                System.out.println("You're using: " + MinecraftVersion.CURRENT.getName());
-                System.out.println("Supported Versions: " + versions);
+                System.out.printf("You're using: %s%n", MinecraftVersion.CURRENT.getName());
+                System.out.printf("Supported Versions: %s%n", versions);
             }
         } catch(Exception e) {
-            System.out.println("Unable to grab user and latest versions, error is as follows: ");
-            System.out.println("\033[0;31m" + e.getMessage());
+            System.out.printf("Unable to grab user and latest versions, error is as follows:%n\033[0;31m%s%n", e.getMessage());
         }
     }
 }
