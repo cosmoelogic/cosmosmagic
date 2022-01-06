@@ -45,7 +45,7 @@ public class ModTools {
             super(material, attackDamage, attackSpeed, settings);
         }
     }
-    public static void register() {
+    public static void registerTools() {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "diamond_tipped_iron_pickaxe"), DiamondTippedItems.DIAMOND_TIPPED_PICKAXE);
     }
 }

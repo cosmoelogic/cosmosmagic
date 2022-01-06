@@ -68,7 +68,7 @@ public class ModArmor {
         public static final Item STUDDED_LEATHER_BOOTS = new ArmorItem(CUSTOM_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(aztrosmod.ITEM_GROUP));
 
     }
-    public static void register() {
+    public static void registerArmor() {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_helmet"), StuddedLeatherItems.STUDDED_LEATHER_HELMET);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_chestplate"), StuddedLeatherItems.STUDDED_LEATHER_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_leggings"), StuddedLeatherItems.STUDDED_LEATHER_LEGGINGS);

@@ -12,7 +12,6 @@ public class ModBlocks {
 
     public static final Block CUT_DIAMOND_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL)
-            .breakByTool(FabricToolTags.PICKAXES, 2)
             .breakByHand(false)
             .requiresTool()
             .strength(5.0f, 30.0f)
@@ -20,7 +19,6 @@ public class ModBlocks {
 
     public static final Block WAXED_DIAMOND_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL)
-            .breakByTool(FabricToolTags.PICKAXES, 2)
             .breakByHand(false)
             .requiresTool()
             .strength(5.0f, 30.0f)
@@ -29,11 +27,11 @@ public class ModBlocks {
 
     public static final Block GLOWSTONE_BRICKS = new Block(FabricBlockSettings
             .of(Material.STONE)
-            .breakByTool(FabricToolTags.PICKAXES, 1)
-            .breakByHand(true)
+            .breakByHand(false)
+            .requiresTool()
             .strength(1.5f, 30.0f)
             .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
-            .luminance(14));
+            .luminance(10));
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(aztrosmod.MOD_ID, "cut_diamond_block"), CUT_DIAMOND_BLOCK);

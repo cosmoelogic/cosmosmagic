@@ -9,6 +9,8 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 
+import net.minecraft.MinecraftVersion;
+
 public class UpdateChecker {
     private final static String current = aztrosmod.MOD_VERSION;
     public static void checkForUpdates() {
@@ -25,7 +27,7 @@ public class UpdateChecker {
             JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent())); //Convert the input stream to a json element
             JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object.
             String versions = rootobj.get("versions").getAsString();
-            if (versions.contains("1.17")) {
+            if (versions.contains(MinecraftVersion.CURRENT.getName())) {
                 String latest = rootobj.get("latest").getAsString();
                 System.out.println("Latest version: " + latest);
                 if (!current.equals(latest)) {
@@ -36,6 +38,8 @@ public class UpdateChecker {
                 }
             } else {
                 System.out.println("This version of Minecraft is no longer receiving updates from this mod.");
+                System.out.println("You're using: " + MinecraftVersion.CURRENT.getName());
+                System.out.println("Supported Versions: " + versions);
             }
         } catch(Exception e) {
             System.out.println("Unable to grab user and latest versions, error is as follows: ");

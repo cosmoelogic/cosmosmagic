@@ -34,9 +34,9 @@ public class aztrosmod implements ModInitializer {
         System.out.printf("%s: Items registered.%n", MOD_ID);
         ModBlocks.registerBlocks();
         System.out.printf("%s: Blocks registered.%n", MOD_ID);
-        ModArmor.register();
+        ModArmor.registerArmor();
         System.out.printf("%s: Armor registered.%n", MOD_ID);
-        ModTools.register();
+        ModTools.registerTools();
         System.out.printf("%s: Tools registered.%n", MOD_ID);
         UpdateChecker.checkForUpdates();
     }

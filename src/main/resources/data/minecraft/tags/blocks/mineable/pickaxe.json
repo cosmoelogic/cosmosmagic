@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "aztros:cut_diamond_block",
+    "aztros:waxed_diamond_block",
+    "aztros:glowstone_bricks"
+  ]
+}
