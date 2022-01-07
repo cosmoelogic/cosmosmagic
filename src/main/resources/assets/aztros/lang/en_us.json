@@ -10,5 +10,7 @@
   "block.aztros.cut_diamond_block": "Cut Diamond Block",
   "block.aztros.waxed_diamond_block": "Waxed Diamond Block",
   "block.aztros.glowstone_bricks": "Glowstone Bricks",
+  "block.aztros.glowstone_brick_stairs": "Glowstone Brick Stairs",
+  "block.aztros.glowstone_brick_slab": "Glowstone Brick Slab",
   "itemGroup.aztros.general": "Aztro's Mod"
 }

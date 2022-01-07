@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aztros:block/glowstone_brick_slab"
+    },
+    "type=double": {
+      "model": "aztros:block/glowstone_bricks"
+    },
+    "type=top": {
+      "model": "aztros:block/glowstone_brick_slab_top"
+    }
+  }
+}

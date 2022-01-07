@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "aztros:blocks/glowstone_bricks",
+    "top": "aztros:blocks/glowstone_bricks",
+    "side": "aztros:blocks/glowstone_bricks"
+  }
+}

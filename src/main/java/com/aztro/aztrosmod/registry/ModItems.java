@@ -23,6 +23,8 @@ public class ModItems {
 
     //glow stone bricks
     public static final Item GLOWSTONE_BRICKS = new BlockItem(ModBlocks.GLOWSTONE_BRICKS, new Item.Settings().group(aztrosmod.ITEM_GROUP));
+    public static final Item GLOWSTONE_BRICK_STAIRS = new BlockItem(ModBlocks.GLOWSTONE_BRICK_STAIRS, new Item.Settings().group(aztrosmod.ITEM_GROUP));
+    public static final Item GLOWSTONE_BRICK_SLAB = new BlockItem(ModBlocks.GLOWSTONE_BRICK_SLAB, new Item.Settings().group(aztrosmod.ITEM_GROUP));
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "cut_diamond"), CUT_DIAMOND);
@@ -31,6 +33,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "crude_diamond"), CRUDE_DIAMOND);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "zombie_jerky"), ZOMBIE_JERKY);
         Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "glowstone_bricks"), GLOWSTONE_BRICKS);
+        Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "glowstone_brick_stairs"), GLOWSTONE_BRICK_STAIRS);
+        Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "glowstone_brick_slab"), GLOWSTONE_BRICK_SLAB);
         FuelRegistry.INSTANCE.add(Items.MUSHROOM_STEM, 200);
         FuelRegistry.INSTANCE.add(Items.BROWN_MUSHROOM_BLOCK, 200);
         FuelRegistry.INSTANCE.add(Items.RED_MUSHROOM_BLOCK, 200);
