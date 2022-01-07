@@ -3,6 +3,8 @@
   "values": [
     "aztros:cut_diamond_block",
     "aztros:waxed_diamond_block",
-    "aztros:glowstone_bricks"
+    "aztros:glowstone_bricks",
+    "aztros:glowstone_brick_stairs",
+    "aztros:glowstone_brick_slab"
   ]
 }

@@ -3,7 +3,6 @@ package com.aztro.aztrosmod.registry;
 import com.aztro.aztrosmod.aztrosmod;
 import com.aztro.aztrosmod.registry.utils.ModStairsBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
 import net.minecraft.sound.*;
 import net.minecraft.util.Identifier;

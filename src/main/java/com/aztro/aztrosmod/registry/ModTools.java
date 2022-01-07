@@ -1,7 +1,6 @@
 package com.aztro.aztrosmod.registry;
 
 import com.aztro.aztrosmod.aztrosmod;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
@@ -38,7 +37,7 @@ public class ModTools {
     }
 
     public static class  DiamondTippedItems {
-        public static ToolItem DIAMOND_TIPPED_PICKAXE = new DiamondTippedPickaxe(DiamondTippedMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(aztrosmod.ITEM_GROUP));
+        public static final ToolItem DIAMOND_TIPPED_PICKAXE = new DiamondTippedPickaxe(DiamondTippedMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(aztrosmod.ITEM_GROUP));
     }
     public static class DiamondTippedPickaxe extends PickaxeItem {
         public DiamondTippedPickaxe(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {

@@ -58,7 +58,7 @@ public class ModArmor {
         }
     }
 
-    public class StuddedLeatherItems {
+    public static class StuddedLeatherItems {
 
         public static final ArmorMaterial CUSTOM_ARMOR_MATERIAL = new StuddedLeather();
         // If you made a new material, this is where you would note it.
