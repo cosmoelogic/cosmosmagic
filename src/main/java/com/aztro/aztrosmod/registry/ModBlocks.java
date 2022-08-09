@@ -12,14 +12,12 @@ public class ModBlocks {
 
     public static final Block CUT_DIAMOND_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL)
-            .breakByHand(false)
             .requiresTool()
             .strength(5.0f, 30.0f)
             .sounds(BlockSoundGroup.METAL));
 
     public static final Block WAXED_DIAMOND_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL)
-            .breakByHand(false)
             .requiresTool()
             .strength(5.0f, 30.0f)
             .sounds(BlockSoundGroup.METAL)
@@ -27,21 +25,18 @@ public class ModBlocks {
 
     public static final Block GLOWSTONE_BRICKS = new Block(FabricBlockSettings
             .of(Material.STONE)
-            .breakByHand(false)
             .requiresTool()
             .strength(1.5f, 30.0f)
             .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
             .luminance(10));
     public static final ModStairsBlock GLOWSTONE_BRICK_STAIRS = new ModStairsBlock(GLOWSTONE_BRICKS.getDefaultState(), FabricBlockSettings
             .of(Material.STONE)
-            .breakByHand(false)
             .requiresTool()
             .strength(1.5f, 30.0f)
             .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
             .luminance(10));
     public static final SlabBlock GLOWSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings
             .of(Material.STONE)
-            .breakByHand(false)
             .requiresTool()
             .strength(1.5f, 30.0f)
             .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
