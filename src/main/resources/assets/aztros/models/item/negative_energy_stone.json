@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "aztros:items/negative_energy_stone"
+  }
+}

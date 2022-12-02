@@ -9,12 +9,12 @@ import net.minecraft.entity.TntEntity;
 import org.lwjgl.glfw.GLFW;
 
 public class aztrosmodclient implements ClientModInitializer {
-    private static KeyBinding keyBinding;
-    // The KeyBinding declaration and registration are commonly executed here statically
+	private static KeyBinding keyBinding;
+	// The KeyBinding declaration and registration are commonly executed here statically
 
-    @Override
-    public void onInitializeClient() {
-        //this is for reference, don't delete it.
+	@Override
+	public void onInitializeClient() {
+		//this is for reference, don't delete it.
 
 //        keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
 //                "key.examplemod.spook", // The translation key of the keybinding's name
@@ -32,5 +32,5 @@ public class aztrosmodclient implements ClientModInitializer {
 //                }
 //            }
 //        });
-    }
+	}
 }
