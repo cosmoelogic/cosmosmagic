@@ -1,6 +1,6 @@
-package com.aztro.aztrosmod.items;
+package com.aztro.aztrosmod.items.magic;
+import com.aztro.aztrosmod.utils.AmmoManager;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -30,25 +30,14 @@ public class ChaosWandItem extends Item {
 		if (playerEntity.hasVehicle()) {
 			playerEntity.stopRiding();
 		}
-		if (!playerEntity.isCreative()) {
-			if (!playerEntity.getInventory().main.stream().anyMatch(stack -> stack.isOf(Items.REDSTONE)))
-				return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-			for (int i = 0; i < playerEntity.getInventory().size(); i++) {
-				if (playerEntity.getInventory().getStack(i).isOf(Items.REDSTONE)) {
-					playerEntity.getInventory().removeStack(i, 1);
-					break;
-				}
-			}
-			playerEntity.damage(DamageSource.MAGIC, 3.0f);
-		}
+		if (AmmoManager.itemIsNotInInventory(playerEntity, Items.REDSTONE)) return new TypedActionResult<>(ActionResult.FAIL, playerEntity.getStackInHand(hand));
+		AmmoManager.decrementItem(playerEntity, Items.REDSTONE);
+		playerEntity.damage(DamageSource.MAGIC, 3.0f);
+		assert MinecraftClient.getInstance().crosshairTarget != null;
 		Vec3d crosshairTargetPos = MinecraftClient.getInstance().crosshairTarget.getPos();
-		teleport(playerEntity, crosshairTargetPos.x, crosshairTargetPos.y, crosshairTargetPos.z);
+		playerEntity.teleport(crosshairTargetPos.x, crosshairTargetPos.y, crosshairTargetPos.z);
 		playerEntity.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
 		return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-	}
-
-	private static void teleport(PlayerEntity playerEntity, double x, double y, double z) {
-		playerEntity.teleport(x, y, z);
 	}
 
 	@Override

@@ -1,15 +1,21 @@
 package com.aztro.aztrosmod;
 
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Identifier;
+
 import com.aztro.aztrosmod.registry.ModArmor;
 import com.aztro.aztrosmod.registry.ModBlocks;
 import com.aztro.aztrosmod.registry.ModItems;
 import com.aztro.aztrosmod.registry.ModTools;
 import com.aztro.aztrosmod.update.UpdateChecker;
-import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
+import com.aztro.aztrosmod.event.AttackEntityHandler;
+
+
 
 public class aztrosmod implements ModInitializer {
 
@@ -18,7 +24,7 @@ public class aztrosmod implements ModInitializer {
 
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
 			new Identifier(MOD_ID, "general"),
-			() -> new ItemStack(ModItems.CUT_DIAMOND_BLOCK)
+			() -> new ItemStack(ModItems.POSITIVE_ENERGY_STONE)
 	);
 
 	@Override
@@ -33,5 +39,7 @@ public class aztrosmod implements ModInitializer {
 		ModTools.registerTools();
 		System.out.printf("%s: Tools registered.%n", MOD_ID);
 		UpdateChecker.checkForUpdates();
+
+		AttackEntityCallback.EVENT.register(new AttackEntityHandler());
 	}
 }

@@ -1,8 +1,7 @@
 package com.aztro.aztrosmod.registry;
 
 import com.aztro.aztrosmod.aztrosmod;
-import com.aztro.aztrosmod.items.ChaosWandItem;
-import com.aztro.aztrosmod.items.ExplosiveWandItem;
+import com.aztro.aztrosmod.items.magic.*;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -36,6 +35,8 @@ public class ModItems {
 
 	public static final ChaosWandItem CHAOS_WAND = new ChaosWandItem(new Item.Settings().group(aztrosmod.ITEM_GROUP).maxCount(1).rarity(Rarity.RARE));
 	public static final ExplosiveWandItem EXPLOSIVE_WAND = new ExplosiveWandItem(new Item.Settings().group(aztrosmod.ITEM_GROUP).maxCount(1).rarity(Rarity.RARE));
+	public static final MomentumCrystalItem MOMENTUM_CRYSTAL = new MomentumCrystalItem(new Item.Settings().group(aztrosmod.ITEM_GROUP).maxCount(16).rarity(Rarity.RARE));
+
 
 	public static void registerItems() {
 		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "cut_diamond"), CUT_DIAMOND);
@@ -51,6 +52,8 @@ public class ModItems {
 		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "neutral_energy_stone"), NEUTRAL_ENERGY_STONE);
 		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "chaos_wand"), CHAOS_WAND);
 		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "explosive_wand"), EXPLOSIVE_WAND);
+		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "momentum_crystal"), MOMENTUM_CRYSTAL);
+
 		FuelRegistry.INSTANCE.add(Items.MUSHROOM_STEM, 200);
 		FuelRegistry.INSTANCE.add(Items.BROWN_MUSHROOM_BLOCK, 200);
 		FuelRegistry.INSTANCE.add(Items.RED_MUSHROOM_BLOCK, 200);
