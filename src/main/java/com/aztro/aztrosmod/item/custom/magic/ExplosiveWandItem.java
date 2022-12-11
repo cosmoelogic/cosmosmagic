@@ -1,4 +1,4 @@
-package com.aztro.aztrosmod.items.magic;
+package com.aztro.aztrosmod.item.custom.magic;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.damage.DamageSource;
@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.world.explosion.Explosion;
 
-import com.aztro.aztrosmod.utils.AmmoManager;
+import com.aztro.aztrosmod.item.AmmoManager;
 import java.util.List;
 
 import static java.lang.Math.abs;

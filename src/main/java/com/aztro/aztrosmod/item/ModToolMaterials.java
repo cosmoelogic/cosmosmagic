@@ -1,4 +1,4 @@
-package com.aztro.aztrosmod.registry;
+package com.aztro.aztrosmod.item;
 
 import com.aztro.aztrosmod.aztrosmod;
 import net.minecraft.item.*;
@@ -6,7 +6,9 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModTools {
+import static com.aztro.aztrosmod.aztrosmod.MOD_ID;
+
+public class ModToolMaterials {
 	public static class DiamondTippedMaterial implements ToolMaterial {
 		public static final DiamondTippedMaterial INSTANCE = new DiamondTippedMaterial();
 		@Override
@@ -45,6 +47,8 @@ public class ModTools {
 		}
 	}
 	public static void registerTools() {
-		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "diamond_tipped_iron_pickaxe"), DiamondTippedItems.DIAMOND_TIPPED_PICKAXE);
+		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "diamond_tipped_iron_pickaxe"), DiamondTippedItems.DIAMOND_TIPPED_PICKAXE);
+
+		System.out.printf("%s: Tools registered.%n", MOD_ID);
 	}
 }

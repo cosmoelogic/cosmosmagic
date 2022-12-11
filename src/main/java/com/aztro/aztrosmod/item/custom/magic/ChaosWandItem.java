@@ -1,5 +1,5 @@
-package com.aztro.aztrosmod.items.magic;
-import com.aztro.aztrosmod.utils.AmmoManager;
+package com.aztro.aztrosmod.item.custom.magic;
+import com.aztro.aztrosmod.item.AmmoManager;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;

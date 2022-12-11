@@ -10,13 +10,18 @@
   "item.aztros.chaos_wand": "Chaos Wand",
   "item.aztros.explosive_wand": "Explosive Wand",
   "item.aztros.momentum_crystal": "Momentum Crystal",
+  "item.aztros.raw_momentum_crystal": "Raw Momentum Crystal",
   "item.aztros.positive_energy_stone": "Positive Energy Stone",
   "item.aztros.negative_energy_stone": "Negative Energy Stone",
   "item.aztros.neutral_energy_stone": "Neutral Energy Stone",
+  "item.aztros.undead_essence": "Essence of the Undead",
   "block.aztros.cut_diamond_block": "Cut Diamond Block",
   "block.aztros.waxed_diamond_block": "Waxed Diamond Block",
   "block.aztros.glowstone_bricks": "Glowstone Bricks",
   "block.aztros.glowstone_brick_stairs": "Glowstone Brick Stairs",
   "block.aztros.glowstone_brick_slab": "Glowstone Brick Slab",
+  "block.aztros.momentum_crystal_ore": "Momentum Crystal Ore",
+  "block.aztros.deepslate_momentum_crystal_ore": "Deepslate Momentum Crystal Ore",
+
   "itemGroup.aztros.general": "Aztro's Mod"
 }

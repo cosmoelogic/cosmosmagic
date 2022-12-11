@@ -1,4 +1,4 @@
-package com.aztro.aztrosmod.registry;
+package com.aztro.aztrosmod.item;
 
 import com.aztro.aztrosmod.aztrosmod;
 import net.minecraft.entity.EquipmentSlot;
@@ -11,7 +11,9 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModArmor {
+import static com.aztro.aztrosmod.aztrosmod.MOD_ID;
+
+public class ModArmorMaterials {
 
 	public static class StuddedLeather implements ArmorMaterial {
 		private static final int[] BASE_DURABILITY = new int[]{76, 88, 82, 60}; //boots, leggings, chestplate, helmet ---- divided by 2
@@ -69,9 +71,11 @@ public class ModArmor {
 
 	}
 	public static void registerArmor() {
-		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_helmet"), StuddedLeatherItems.STUDDED_LEATHER_HELMET);
-		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_chestplate"), StuddedLeatherItems.STUDDED_LEATHER_CHESTPLATE);
-		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_leggings"), StuddedLeatherItems.STUDDED_LEATHER_LEGGINGS);
-		Registry.register(Registry.ITEM, new Identifier(aztrosmod.MOD_ID, "studded_leather_boots"), StuddedLeatherItems.STUDDED_LEATHER_BOOTS);
+		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "studded_leather_helmet"), StuddedLeatherItems.STUDDED_LEATHER_HELMET);
+		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "studded_leather_chestplate"), StuddedLeatherItems.STUDDED_LEATHER_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "studded_leather_leggings"), StuddedLeatherItems.STUDDED_LEATHER_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "studded_leather_boots"), StuddedLeatherItems.STUDDED_LEATHER_BOOTS);
+
+		System.out.printf("%s: Armor registered.%n", MOD_ID);
 	}
 }

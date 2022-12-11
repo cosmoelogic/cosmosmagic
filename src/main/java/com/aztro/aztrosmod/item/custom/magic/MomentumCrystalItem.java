@@ -1,9 +1,8 @@
-package com.aztro.aztrosmod.items.magic;
+package com.aztro.aztrosmod.item.custom.magic;
 
-import com.aztro.aztrosmod.registry.ModItems;
-import com.aztro.aztrosmod.utils.AmmoManager;
+import com.aztro.aztrosmod.item.ModItems;
+import com.aztro.aztrosmod.item.AmmoManager;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -84,8 +83,8 @@ public class MomentumCrystalItem extends Item {
 					if (boostVel[2] < 0) boostVel[2] -= Math.abs(boostVel[2]) - Math.abs(boostVel[0])/2;
 				}
 			}
-			if (enemy.isOnGround()) boostVel[1] = 4; else boostVel[1] = 2;
-			enemy.setVelocity(boostVel[0], boostVel[1], boostVel[2]);
+			if (enemy.isOnGround()) boostVel[1] = 10; else boostVel[1] = 4;
+			enemy.addVelocity(boostVel[0], boostVel[1], boostVel[2]);
 			AmmoManager.decrementItem(player, ModItems.MOMENTUM_CRYSTAL);
 		}
 	}

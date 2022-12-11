@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aztros:blocks/deepslate_momentum_crystal_ore"
+  }
+}

@@ -5,6 +5,8 @@
     "aztros:waxed_diamond_block",
     "aztros:glowstone_bricks",
     "aztros:glowstone_brick_stairs",
-    "aztros:glowstone_brick_slab"
+    "aztros:glowstone_brick_slab",
+    "aztros:momentum_crystal_ore",
+    "aztros:deepslate_momentum_crystal_ore"
   ]
 }

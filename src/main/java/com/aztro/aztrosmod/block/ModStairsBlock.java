@@ -1,4 +1,4 @@
-package com.aztro.aztrosmod.utils;
+package com.aztro.aztrosmod.block;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;

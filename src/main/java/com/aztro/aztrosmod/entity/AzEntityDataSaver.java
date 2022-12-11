@@ -1,4 +1,4 @@
-package com.aztro.aztrosmod.utils;
+package com.aztro.aztrosmod.entity;
 
 import net.minecraft.nbt.NbtCompound;
 

@@ -1,12 +1,19 @@
 package com.aztro.aztrosmod;
 
+import com.aztro.aztrosmod.fluid.ModFluids;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.entity.TntEntity;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
+
 
 public class aztrosmodclient implements ClientModInitializer {
 	private static KeyBinding keyBinding;
@@ -14,6 +21,7 @@ public class aztrosmodclient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		ModFluids.renderFluids();
 		//this is for reference, don't delete it.
 
 //        keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
