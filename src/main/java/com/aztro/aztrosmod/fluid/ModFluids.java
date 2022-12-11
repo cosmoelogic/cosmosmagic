@@ -23,7 +23,7 @@ public class ModFluids {
 	public static FlowableFluid STILL_AMBROSIA = new AmbrosiaFluid.Still();
 	public static FlowableFluid FLOWING_AMBROSIA = new AmbrosiaFluid.Flowing();
 	public static Item AMBROSIA_BUCKET;
-	public static Block AMBROSIA = new FluidBlock(STILL_AMBROSIA, FabricBlockSettings.copy(Blocks.WATER).suffocates((state, world, pos) -> false).luminance((state) -> 10));
+	public static Block AMBROSIA = new FluidBlock(STILL_AMBROSIA, FabricBlockSettings.copy(Blocks.WATER).suffocates((state, world, pos) -> false).luminance((state) -> 10).blockVision((state, world, pos) -> true).nonOpaque());
 	public static void registerFluids() {
 		Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ambrosia"), AMBROSIA);
 		Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_ambrosia"), FLOWING_AMBROSIA);
