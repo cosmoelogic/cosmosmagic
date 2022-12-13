@@ -1,4 +1,4 @@
-package com.aztro.aztrosmod.item;
+package com.aztro.aztrosmod.item.utils;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

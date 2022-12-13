@@ -15,7 +15,7 @@ import javax.annotation.Nullable;
 public class AttackEntityHandler implements AttackEntityCallback {
 	public ActionResult interact(PlayerEntity player, World world, Hand hand,
 								 Entity entity, @Nullable EntityHitResult hitResult) {
-		if (player.isHolding(ModItems.MOMENTUM_CRYSTAL)) MomentumCrystalItem.KnockbackEnemy(player, entity);
+		MomentumCrystalItem.Boost.boostEnemy(player, entity);
 		return ActionResult.PASS;
 	}
 }

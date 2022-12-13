@@ -1,11 +1,9 @@
 package com.aztro.aztrosmod.item.custom.magic;
-import com.aztro.aztrosmod.item.AmmoManager;
+import com.aztro.aztrosmod.item.utils.DurabilityManager;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -25,25 +23,23 @@ public class ChaosWandItem extends Item {
 	}
 
 	@Override
-	public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand)
+	public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand)
 	{
-		if (playerEntity.hasVehicle()) {
-			playerEntity.stopRiding();
+		if (player.hasVehicle()) {
+			player.stopRiding();
 		}
-		if (AmmoManager.itemIsNotInInventory(playerEntity, Items.REDSTONE)) return new TypedActionResult<>(ActionResult.FAIL, playerEntity.getStackInHand(hand));
-		AmmoManager.decrementItem(playerEntity, Items.REDSTONE);
-		playerEntity.damage(DamageSource.MAGIC, 3.0f);
 		assert MinecraftClient.getInstance().crosshairTarget != null;
 		Vec3d crosshairTargetPos = MinecraftClient.getInstance().crosshairTarget.getPos();
-		playerEntity.teleport(crosshairTargetPos.x, crosshairTargetPos.y, crosshairTargetPos.z);
-		playerEntity.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
-		return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
+		player.teleport(crosshairTargetPos.x, crosshairTargetPos.y, crosshairTargetPos.z);
+		player.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
+		DurabilityManager.damageItem(player, hand, 1);
+		return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
 	}
 
 	@Override
 	public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
 		tooltip.add(Text.translatable("Teleports the player up to 5 blocks").formatted(Formatting.GREEN));
 		tooltip.add(Text.translatable("in the direction of their crosshair.").formatted(Formatting.GREEN));
-		tooltip.add(Text.translatable("Requires redstone dust + health as ammo.").formatted(Formatting.RED));
+		DurabilityManager.addMagicDurabilityToolTip(itemStack, tooltip);
 	}
 }

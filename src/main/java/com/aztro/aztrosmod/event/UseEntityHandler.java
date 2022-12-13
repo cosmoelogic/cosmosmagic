@@ -1,7 +1,7 @@
 package com.aztro.aztrosmod.event;
 
 import com.aztro.aztrosmod.item.ModItems;
-import com.aztro.aztrosmod.item.AmmoManager;
+import com.aztro.aztrosmod.item.utils.AmmoManager;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
