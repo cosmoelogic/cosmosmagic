@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "aztros:blocks/glowstone_bricks"
+    "all": "aztros:block/glowstone_bricks"
   }
 }

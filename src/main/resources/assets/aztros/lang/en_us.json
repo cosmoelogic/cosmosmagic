@@ -9,6 +9,10 @@
   "item.aztros.zombie_jerky": "Zombie Jerky",
   "item.aztros.chaos_wand": "Chaos Wand",
   "item.aztros.explosive_wand": "Explosive Wand",
+  "item.aztros.aqua_wand": "Aqua Wand",
+  "item.aztros.magma_wand": "Magma Wand",
+  "item.aztros.epic_aqua_wand": "Epic Aqua Wand",
+  "item.aztros.epic_magma_wand": "Epic Magma Wand",
   "item.aztros.momentum_crystal": "Momentum Crystal",
   "item.aztros.raw_momentum_crystal": "Raw Momentum Crystal",
   "item.aztros.positive_energy_stone": "Positive Energy Stone",
@@ -16,6 +20,9 @@
   "item.aztros.neutral_energy_stone": "Neutral Energy Stone",
   "item.aztros.undead_essence": "Essence of the Undead",
   "item.aztros.creepy_essence": "Essence of the Creeping",
+  "item.aztros.ambrosia_bucket": "Bucket of Ambrosia",
+  "item.aztros.ambrosia_bottle": "Bottle of Ambrosia",
+  "item.aztros.ambrosia_bottle.effect.empty": "Bottle of Ambrosia",
   "block.aztros.cut_diamond_block": "Cut Diamond Block",
   "block.aztros.waxed_diamond_block": "Waxed Diamond Block",
   "block.aztros.glowstone_bricks": "Glowstone Bricks",
@@ -23,6 +30,8 @@
   "block.aztros.glowstone_brick_slab": "Glowstone Brick Slab",
   "block.aztros.momentum_crystal_ore": "Momentum Crystal Ore",
   "block.aztros.deepslate_momentum_crystal_ore": "Deepslate Momentum Crystal Ore",
+  "block.aztros.momentum_crystal_block": "Momentum Crystal Block",
+  "block.aztros.ambrosia": "Ambrosia",
 
-  "itemGroup.aztros.general": "Aztro's Mod"
+  "itemGroup.aztros.general": "Aztro's Magic"
 }

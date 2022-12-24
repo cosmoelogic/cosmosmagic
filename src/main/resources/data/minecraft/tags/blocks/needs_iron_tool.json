@@ -1,9 +1,8 @@
 {
   "replace": false,
   "values": [
-    "aztros:cut_diamond_block",
-    "aztros:waxed_diamond_block",
     "aztros:momentum_crystal_ore",
-    "aztros:deepslate_momentum_crystal_ore"
+    "aztros:deepslate_momentum_crystal_ore",
+    "aztros:momentum_crystal_block"
   ]
 }

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "aztros:crude_diamond"
-  },
-  "result": "minecraft:diamond",
-  "experience": 0.1,
-  "cookingtime": 150
-}

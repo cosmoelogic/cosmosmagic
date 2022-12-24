@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "aztros:items/ambrosia_bucket"
+    "layer0": "aztros:item/ambrosia_bucket"
   }
 }

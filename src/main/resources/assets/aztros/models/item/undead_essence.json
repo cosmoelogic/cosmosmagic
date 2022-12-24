@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "aztros:items/undead_essence"
+    "layer0": "aztros:item/undead_essence"
   }
 }
