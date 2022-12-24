@@ -1,15 +1,15 @@
 package net.aztro.aztrosmagic.update;
 
-import net.aztro.aztrosmagic.aztrosmagic;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import net.aztro.aztrosmagic.aztrosmagic;
+import net.minecraft.MinecraftVersion;
 
-import java.io.*;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-
-import net.minecraft.MinecraftVersion;
 
 public class UpdateChecker {
 	private static final String MOD_VERSION = aztrosmagic.MOD_VERSION;

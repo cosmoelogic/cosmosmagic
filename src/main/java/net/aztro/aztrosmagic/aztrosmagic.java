@@ -1,6 +1,7 @@
 package net.aztro.aztrosmagic;
 
 import net.aztro.aztrosmagic.block.ModBlocks;
+import net.aztro.aztrosmagic.effect.ModEffects;
 import net.aztro.aztrosmagic.event.AttackEntityHandler;
 import net.aztro.aztrosmagic.event.UseEntityHandler;
 import net.aztro.aztrosmagic.features.ModConfiguredFeatures;
@@ -9,7 +10,6 @@ import net.aztro.aztrosmagic.item.ModArmorMaterials;
 import net.aztro.aztrosmagic.item.ModBlockItems;
 import net.aztro.aztrosmagic.item.ModItems;
 import net.aztro.aztrosmagic.item.ModToolMaterials;
-import net.aztro.aztrosmagic.effect.ModEffects;
 import net.aztro.aztrosmagic.potion.ModPotions;
 import net.aztro.aztrosmagic.update.UpdateChecker;
 import net.fabricmc.api.ModInitializer;

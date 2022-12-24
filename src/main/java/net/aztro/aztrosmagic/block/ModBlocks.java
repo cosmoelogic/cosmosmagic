@@ -2,10 +2,14 @@ package net.aztro.aztrosmagic.block;
 
 import net.aztro.aztrosmagic.aztrosmagic;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.*;
-import net.minecraft.sound.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.FluidBlock;
+import net.minecraft.block.Material;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.*;
 
 import static net.aztro.aztrosmagic.fluid.ModFluids.AMBROSIA_STILL;
 

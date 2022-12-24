@@ -3,9 +3,12 @@ package net.aztro.aztrosmagic.item;
 import net.aztro.aztrosmagic.aztrosmagic;
 import net.aztro.aztrosmagic.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.*;
-import net.minecraft.util.*;
-import net.minecraft.registry.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.lang.reflect.Field;
 

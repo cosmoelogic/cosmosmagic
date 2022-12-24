@@ -3,11 +3,15 @@ package net.aztro.aztrosmagic.item;
 import net.aztro.aztrosmagic.aztrosmagic;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.*;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Item;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.sound.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.*;
 
 import java.lang.reflect.Field;
 
