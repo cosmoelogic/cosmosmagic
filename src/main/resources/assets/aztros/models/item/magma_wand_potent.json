@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "aztros:item/epic_magma_wand"
+    "layer0": "aztros:item/magma_wand"
   }
 }

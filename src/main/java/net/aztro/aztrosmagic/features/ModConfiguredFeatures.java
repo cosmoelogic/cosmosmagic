@@ -1,18 +1,13 @@
 package net.aztro.aztrosmagic.features;
 
 import net.aztro.aztrosmagic.block.ModBlocks;
-import net.minecraft.registry.BuiltinRegistries;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
-import static net.aztro.aztrosmagic.aztrosmagic.MOD_ID;
-import static net.minecraft.registry.tag.BlockTags.*;
+import static net.minecraft.registry.tag.BlockTags.DEEPSLATE_ORE_REPLACEABLES;
+import static net.minecraft.registry.tag.BlockTags.STONE_ORE_REPLACEABLES;
 
 public class ModConfiguredFeatures {
 

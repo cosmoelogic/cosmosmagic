@@ -10,18 +10,21 @@ public class AmbrosiaEffect extends StatusEffect {
 	public AmbrosiaEffect(StatusEffectCategory statusEffectCategory, int color) {
 		super(statusEffectCategory, color);
 	}
-	int i = 0;
+	private int i = 0;
+
 	@Override
 	public void applyUpdateEffect(LivingEntity player, int pAmplifier) {
+		float strength = 0.5f;
 		PlayerEntity playerEntity = (PlayerEntity) player;
 		HungerManager hungerManager = playerEntity.getHungerManager();
 		if (player.world.isClient()) return;
-		if (i == 20) {
-			if (hungerManager.isNotFull())hungerManager.add(1, 1);
-			else if (player.getHealth() < player.getMaxHealth()) player.heal(1.0f);
-			else if (player.getAbsorptionAmount() < 10) player.setAbsorptionAmount(player.getAbsorptionAmount() + pAmplifier);
-			i = 0;
-		}
+		final int HEAL_RATE = 25;
+		final int ABSORPTION_RATE = 30;
+		final int ABSORPTION_CAP = 10;
+		final int HUNGER_RATE = 30;
+		if (player.getHealth() >= player.getMaxHealth() && i % ABSORPTION_RATE == 0 && player.getAbsorptionAmount() < ABSORPTION_CAP) player.setAbsorptionAmount(player.getAbsorptionAmount() + strength);
+		else if (i % HEAL_RATE == 0) player.heal(strength);
+		if (i % HUNGER_RATE == 0 && hungerManager.isNotFull()) hungerManager.add(1, 1);
 		i++;
 		super.applyUpdateEffect(player, pAmplifier);
 	}
