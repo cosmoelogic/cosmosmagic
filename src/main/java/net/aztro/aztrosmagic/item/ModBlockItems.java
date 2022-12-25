@@ -32,7 +32,7 @@ public class ModBlockItems {
 			try {
 				Object value = field.get(null);
 				if (value instanceof Item item) {
-					ItemGroupEvents.modifyEntriesEvent(aztrosmagic.ITEM_GROUP).register(content -> content.add(item));
+					ItemGroupEvents.modifyEntriesEvent(aztrosmagic.BLOCK_ITEM_GROUP).register(content -> content.add(item));
 				}
 			} catch (IllegalAccessException e) {
 				e.printStackTrace();

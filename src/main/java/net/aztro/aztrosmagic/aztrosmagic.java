@@ -27,6 +27,9 @@ public class aztrosmagic implements ModInitializer {
 	public static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier(MOD_ID, "general"))
 			.icon(() -> new ItemStack(ModItems.RAW_MOMENTUM_CRYSTAL))
 			.build();
+	public static final ItemGroup BLOCK_ITEM_GROUP = FabricItemGroup.builder(new Identifier(MOD_ID, "blocks"))
+			.icon(() -> new ItemStack(ModBlockItems.MOMENTUM_CRYSTAL_BLOCK))
+			.build();
 
 	@Override
 	public void onInitialize() {
