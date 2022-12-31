@@ -60,7 +60,7 @@ jar {
 	}
 	manifest {
 		attributes(
-				'Main-Class': 'net.aztro.aztrosmagic.Main'
+				'Main-Class': 'net.cosmo.cosmosmagic.Main'
 		)
 	}
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "aztros:block/glowstone_bricks",
-    "top": "aztros:block/glowstone_bricks",
-    "side": "aztros:block/glowstone_bricks"
-  }
-}

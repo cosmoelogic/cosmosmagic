@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "aztros:raw_momentum_crystal"
-  },
-  "result": "aztros:momentum_crystal",
-  "experience": 0.1,
-  "cookingtime": 200
-}

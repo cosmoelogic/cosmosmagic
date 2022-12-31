@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "cosmos:raw_momentum_crystal"
+  },
+  "result": "cosmos:momentum_crystal",
+  "experience": 0.1,
+  "cookingtime": 150
+}

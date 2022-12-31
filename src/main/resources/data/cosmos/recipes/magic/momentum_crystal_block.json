@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cosmos:momentum_crystal"
+    }
+  },
+  "result": {
+    "item": "cosmos:momentum_crystal_block",
+    "count": 1
+  }
+}

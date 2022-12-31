@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "cosmos:item/diamond_tipped_iron_pickaxe"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "cosmos:block/glowstone_bricks",
+    "top": "cosmos:block/glowstone_bricks",
+    "side": "cosmos:block/glowstone_bricks"
+  }
+}

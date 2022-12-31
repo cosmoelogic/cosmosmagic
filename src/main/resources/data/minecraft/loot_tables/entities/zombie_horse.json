@@ -45,7 +45,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "aztros:undead_essence"
+          "name": "cosmos:undead_essence"
         }
       ],
       "rolls": 1

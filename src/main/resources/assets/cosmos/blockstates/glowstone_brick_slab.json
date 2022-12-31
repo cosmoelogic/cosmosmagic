@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cosmos:block/glowstone_brick_slab"
+    },
+    "type=double": {
+      "model": "cosmos:block/glowstone_bricks"
+    },
+    "type=top": {
+      "model": "cosmos:block/glowstone_brick_slab_top"
+    }
+  }
+}

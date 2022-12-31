@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "aztros:momentum_crystal_ore",
-    "aztros:deepslate_momentum_crystal_ore",
-    "aztros:momentum_crystal_block"
+    "cosmos:momentum_crystal_ore",
+    "cosmos:deepslate_momentum_crystal_ore",
+    "cosmos:momentum_crystal_block"
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "#N#",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:tnt"
+    },
+    "O": {
+      "item": "minecraft:redstone"
+    },
+    "N": {
+      "item": "cosmos:negative_energy_stone"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "cosmos:explosive_wand",
+    "count": 1
+  }
+}

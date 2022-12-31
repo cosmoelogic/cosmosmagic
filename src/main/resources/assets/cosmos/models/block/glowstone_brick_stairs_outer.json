@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cosmos:block/glowstone_bricks",
+    "top": "cosmos:block/glowstone_bricks",
+    "side": "cosmos:block/glowstone_bricks"
+  }
+}

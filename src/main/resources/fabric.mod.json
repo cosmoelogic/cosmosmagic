@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "aztros",
+  "id": "cosmos",
   "version": "0.9.2",
 
-  "name": "Aztro's Magic",
-  "description": "Aztro's Magic Mod\n\n",
+  "name": "Cosmo's Magic",
+  "description": "Cosmo's Magic Mod\n\n",
   "authors": [
-    "Aztro"
+    "Cosmo"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/aztros",
@@ -14,19 +14,19 @@
   },
 
   "license": "All Rights Reserved",
-  "icon": "assets/aztros/icon.png",
+  "icon": "assets/cosmos/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.aztro.aztrosmagic.aztrosmagic"
+      "net.cosmo.cosmosmagic.cosmosmagic"
     ],
     "client": [
-      "net.aztro.aztrosmagic.aztrosmagicclient"
+      "net.cosmo.cosmosmagic.cosmosmagicclient"
     ]
   },
   "mixins": [
-    "aztros.mixins.json"
+    "cosmos.mixins.json"
   ],
 
   "depends": {

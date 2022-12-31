@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "aztros:waxed_diamond_block"
-  },
-  "result": "minecraft:diamond_block",
-  "experience": 0,
-  "cookingtime": 200
-}

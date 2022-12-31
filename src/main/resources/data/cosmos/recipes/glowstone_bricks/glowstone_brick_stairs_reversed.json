@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cosmos:glowstone_bricks"
+    }
+  },
+  "result": {
+    "item": "cosmos:glowstone_brick_stairs",
+    "count": 6
+  }
+}
