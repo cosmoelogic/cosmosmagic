@@ -38,7 +38,6 @@ public class aztrosmagic implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModItems.registerItems();
 		ModEffects.registerEffects();
-		ModPotions.registerPotions();
 		ModBlockItems.registerBlockItems();
 		ModArmorMaterials.registerArmor();
 		ModToolMaterials.registerTools();

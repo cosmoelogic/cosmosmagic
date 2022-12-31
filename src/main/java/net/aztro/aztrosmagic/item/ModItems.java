@@ -25,13 +25,13 @@ public class ModItems {
 
 
 	//magic items
-	public static final Item POSITIVE_ENERGY_STONE = new Item(new Item.Settings());
-	public static final Item NEGATIVE_ENERGY_STONE = new Item(new Item.Settings());
+	public static final Item POSITIVE_ENERGY_STONE = new Item(new Item.Settings().rarity(Rarity.UNCOMMON));
+	public static final Item NEGATIVE_ENERGY_STONE = new Item(new Item.Settings().rarity(Rarity.UNCOMMON));
 	public static final Item NEUTRAL_ENERGY_STONE = new Item(new Item.Settings());
 
-	public static final Item RAW_MOMENTUM_CRYSTAL = new Item(new Item.Settings().maxCount(16).rarity(Rarity.UNCOMMON));
-	public static final Item UNDEAD_ESSENCE = new Item(new Item.Settings().maxCount(64).rarity(Rarity.UNCOMMON));
-	public static final Item CREEPY_ESSENCE = new Item(new Item.Settings().maxCount(64).rarity(Rarity.UNCOMMON));
+	public static final Item RAW_MOMENTUM_CRYSTAL = new Item(new Item.Settings().rarity(Rarity.UNCOMMON));
+	public static final Item UNDEAD_ESSENCE = new Item(new Item.Settings().rarity(Rarity.UNCOMMON));
+	public static final Item CREEPY_ESSENCE = new Item(new Item.Settings().rarity(Rarity.UNCOMMON));
 
 	public static final AmbrosiaBucketItem AMBROSIA_BUCKET = new AmbrosiaBucketItem(ModFluids.AMBROSIA_STILL, new Item.Settings().maxCount(1).rarity(Rarity.EPIC));
 

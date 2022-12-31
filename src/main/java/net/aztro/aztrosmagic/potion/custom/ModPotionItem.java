@@ -13,7 +13,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class ModPotionItem extends PotionItem {
-	private static final int MAX_USE_TIME = 32;
 	public StatusEffect effect;
 	public int duration, amplifier;
 	public ModPotionItem(StatusEffect effect, int duration, int amplifier, Settings settings) {
@@ -21,6 +20,18 @@ public class ModPotionItem extends PotionItem {
 		this.effect = effect;
 		this.duration = duration;
 		this.amplifier = amplifier;
+	}
+	public ModPotionItem(StatusEffect effect, int duration, Settings settings) {
+		super(settings);
+		this.effect = effect;
+		this.duration = duration;
+		this.amplifier = 0;
+	}
+	public ModPotionItem(StatusEffect effect, Settings settings) {
+		super(settings);
+		this.effect = effect;
+		this.duration = 160;
+		this.amplifier = 0;
 	}
 	@Override
 	public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {}
