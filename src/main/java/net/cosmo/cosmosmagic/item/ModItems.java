@@ -3,7 +3,6 @@ package net.cosmo.cosmosmagic.item;
 import net.cosmo.cosmosmagic.cosmosmagic;
 import net.cosmo.cosmosmagic.fluid.ModFluids;
 import net.cosmo.cosmosmagic.item.custom.magic.*;
-import net.cosmo.cosmosmagic.item.custom.magic.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.Blocks;
@@ -52,6 +51,15 @@ public class ModItems {
 	public static final TransfigureWandItem AQUA_WAND_POTENT = new TransfigureWandItem(new Item.Settings()
 			.maxCount(1).rarity(Rarity.EPIC).maxDamage(15), Blocks.WATER);
 
+	public static final FireballWandItem FIREBALL_WAND = new FireballWandItem(new Item.Settings()
+			.maxCount(1).rarity(Rarity.UNCOMMON).maxDamage(15));
+
+	public static final FireballWandItem FIREBALL_WAND_POTENT = new FireballWandItem(new Item.Settings()
+			.maxCount(1).rarity(Rarity.EPIC).maxDamage(20));
+
+	public static final FireballWandItem DRAGON_FIREBALL_WAND = new FireballWandItem(new Item.Settings()
+			.maxCount(1).rarity(Rarity.RARE).maxDamage(25));
+
 	public static final MomentumCrystalItem MOMENTUM_CRYSTAL = new MomentumCrystalItem(new Item.Settings()
 			.maxCount(16).rarity(Rarity.RARE));
 
@@ -72,6 +80,9 @@ public class ModItems {
 		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "aqua_wand"), AQUA_WAND);
 		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "magma_wand_potent"), MAGMA_WAND_POTENT);
 		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "aqua_wand_potent"), AQUA_WAND_POTENT);
+		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "fireball_wand"), FIREBALL_WAND);
+		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "fireball_wand_potent"), FIREBALL_WAND_POTENT);
+		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "dragon_fireball_wand"), DRAGON_FIREBALL_WAND);
 
 		FuelRegistry.INSTANCE.add(Items.MUSHROOM_STEM, 200);
 		FuelRegistry.INSTANCE.add(Items.BROWN_MUSHROOM_BLOCK, 200);

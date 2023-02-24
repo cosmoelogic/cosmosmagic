@@ -18,10 +18,12 @@
   "item.cosmos.negative_energy_stone": "Negative Energy Stone",
   "item.cosmos.neutral_energy_stone": "Neutral Energy Stone",
   "item.cosmos.undead_essence": "Essence of the Undead",
-  "item.cosmos.creepy_essence": "Essence of the Creeping",
+  "item.cosmos.creepy_essence": "Essence of the Creepy",
   "item.cosmos.ambrosia_bucket": "Bucket of Ambrosia",
-  "item.cosmos.ambrosia_bottle": "Bottle of Ambrosia",
-  "item.cosmos.ambrosia_bottle.effect.empty": "Bottle of Ambrosia",
+  "item.cosmos.fireball_wand": "Fireball Wand",
+  "item.cosmos.fireball_wand_potent": "Potent Fireball Wand",
+  "item.cosmos.dragon_fireball_wand": "Draconian Fireball Wand",
+
   "block.cosmos.cut_diamond_block": "Cut Diamond Block",
   "block.cosmos.waxed_diamond_block": "Waxed Diamond Block",
   "block.cosmos.glowstone_bricks": "Glowstone Bricks",
@@ -31,6 +33,23 @@
   "block.cosmos.deepslate_momentum_crystal_ore": "Deepslate Momentum Crystal Ore",
   "block.cosmos.momentum_crystal_block": "Momentum Crystal Block",
   "block.cosmos.ambrosia": "Ambrosia",
+
+  "item.minecraft.tipped_arrow.effect.freeze": "Arrow of Freezing",
+  "item.minecraft.potion.effect.freeze": "Potion of Freezing",
+  "item.minecraft.splash_potion.effect.freeze": "Splash Potion of Freezing",
+  "item.minecraft.lingering_potion.effect.freeze": "Lingering Potion of Freezing",
+  "effect.cosmos.freeze": "Freeze",
+  "item.minecraft.tipped_arrow.effect.momentum": "Arrow of Momentum",
+  "item.minecraft.potion.effect.momentum": "Potion of Momentum",
+  "item.minecraft.splash_potion.effect.momentum": "Splash Potion of Momentum",
+  "item.minecraft.lingering_potion.effect.momentum": "Lingering Potion of Momentum",
+  "effect.cosmos.momentum": "Momentum",
+  "item.minecraft.tipped_arrow.effect.sinkhole": "Arrow of Density",
+  "item.minecraft.potion.effect.sinkhole": "Potion of Density",
+  "item.minecraft.splash_potion.effect.sinkhole": "Splash Potion of Density",
+  "item.minecraft.lingering_potion.effect.sinkhole": "Lingering Potion of Density",
+  "effect.cosmos.sinkhole": "Density",
+
 
   "itemGroup.cosmos.general": "Cosmo's Magic"
 }

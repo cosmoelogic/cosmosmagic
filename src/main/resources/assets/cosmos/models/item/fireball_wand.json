@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "cosmos:item/ambrosia_bottle"
+    "layer0": "cosmos:item/fireball_wand"
   }
 }

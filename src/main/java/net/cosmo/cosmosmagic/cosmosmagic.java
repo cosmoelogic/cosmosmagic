@@ -10,6 +10,7 @@ import net.cosmo.cosmosmagic.item.ModArmorMaterials;
 import net.cosmo.cosmosmagic.item.ModBlockItems;
 import net.cosmo.cosmosmagic.item.ModItems;
 import net.cosmo.cosmosmagic.item.ModToolMaterials;
+import net.cosmo.cosmosmagic.potion.ModPotions;
 import net.cosmo.cosmosmagic.update.UpdateChecker;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
@@ -37,11 +38,12 @@ public class cosmosmagic implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModItems.registerItems();
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 		ModBlockItems.registerBlockItems();
 		ModArmorMaterials.registerArmor();
 		ModToolMaterials.registerTools();
-		ModConfiguredFeatures.registerConfiguredFeatures();
-		ModPlacedFeatures.registerPlacedFeatures();
+		//ModConfiguredFeatures.registerConfiguredFeatures();
+		//ModPlacedFeatures.registerPlacedFeatures();
 		AttackEntityCallback.EVENT.register(new AttackEntityHandler());
 		UseEntityCallback.EVENT.register(new UseEntityHandler());
 	}

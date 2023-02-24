@@ -1,4 +1,4 @@
-package net.cosmo.cosmosmagic.item.utils;
+package net.cosmo.cosmosmagic.world;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.hit.BlockHitResult;

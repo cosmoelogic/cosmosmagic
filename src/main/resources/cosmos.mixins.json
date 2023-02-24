@@ -4,7 +4,7 @@
   "package": "net.cosmo.cosmosmagic.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "JumppadMixin"
+    "MomentumMixin"
   ],
   "client": [
   ],

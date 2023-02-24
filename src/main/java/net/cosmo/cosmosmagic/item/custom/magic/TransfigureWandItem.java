@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-import static net.cosmo.cosmosmagic.item.utils.RayTracing.rayCast;
+import static net.cosmo.cosmosmagic.world.RayTracing.rayCast;
 
 public class TransfigureWandItem extends Item{
 	public Block transfigureBlock;
@@ -30,7 +30,7 @@ public class TransfigureWandItem extends Item{
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand)
 	{
 		ItemStack itemStack = player.getStackInHand(hand);
-		BlockHitResult blockHitResult = rayCast(world, player, 5.0);
+		BlockHitResult blockHitResult = (BlockHitResult) player.raycast(5.0, 1, true);
 		BlockPos blockPos = blockHitResult.getBlockPos();
 		Direction direction = blockHitResult.getSide();
 		BlockPos blockPos2 = blockPos.offset(direction);

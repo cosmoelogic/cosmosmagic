@@ -16,6 +16,6 @@ public class DurabilityManager {
 		itemStack.damage(damage, player, (e) -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND)
 	);}
 	public static void addMagicDurabilityToolTip(ItemStack itemStack, List<Text> tooltip) {
-		tooltip.add(Text.translatable("Mana Remaining:" + (itemStack.getMaxDamage()-itemStack.getDamage())).formatted(Formatting.GOLD));
+		tooltip.add(Text.translatable("Mana Remaining: " + (itemStack.getMaxDamage()-itemStack.getDamage()) + "/" + itemStack.getMaxDamage()).formatted(Formatting.GOLD));
 	}
 }

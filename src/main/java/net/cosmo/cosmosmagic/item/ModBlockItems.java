@@ -38,5 +38,6 @@ public class ModBlockItems {
 				e.printStackTrace();
 			}
 		}
+		System.out.printf("%s: Block items registered.%n", cosmosmagic.MOD_ID);
 	}
 }

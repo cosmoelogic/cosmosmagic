@@ -1,13 +1,11 @@
 {
   "replace": false,
   "values": [
-    "aztros:cut_diamond_block",
-    "aztros:waxed_diamond_block",
-    "aztros:glowstone_bricks",
-    "aztros:glowstone_brick_stairs",
-    "aztros:glowstone_brick_slab",
-    "aztros:momentum_crystal_ore",
-    "aztros:deepslate_momentum_crystal_ore",
-    "aztros:momentum_crystal_block"
+    "cosmos:glowstone_bricks",
+    "cosmos:glowstone_brick_stairs",
+    "cosmos:glowstone_brick_slab",
+    "cosmos:momentum_crystal_ore",
+    "cosmos:deepslate_momentum_crystal_ore",
+    "cosmos:momentum_crystal_block"
   ]
 }

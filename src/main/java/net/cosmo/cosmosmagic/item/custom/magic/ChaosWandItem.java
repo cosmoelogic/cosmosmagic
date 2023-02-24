@@ -18,11 +18,15 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import static net.minecraft.util.Formatting.*;
 
 
 public class ChaosWandItem extends Item {
+	private static final ScheduledExecutorService SCHEDULER = Executors.newSingleThreadScheduledExecutor();
 	double maxDistance;
 	public ChaosWandItem(double maxDistance, Settings settings) {
 		super(settings);
@@ -52,9 +56,10 @@ public class ChaosWandItem extends Item {
 				return new TypedActionResult<>(ActionResult.PASS, itemStack);
 			}
 		}
-		player.teleport(blockPos2.getX(), blockPos2.getY(), blockPos2.getZ());
-		player.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
 		DurabilityManager.damageItem(player, hand, 1);
+		player.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 2.0F, 1.5F);
+		player.teleport(blockPos2.getX(), blockPos2.getY(), blockPos2.getZ());
+		SCHEDULER.schedule(() -> player.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 2.5F, 0.5F), 150, TimeUnit.MILLISECONDS);
 		return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
 	}
 

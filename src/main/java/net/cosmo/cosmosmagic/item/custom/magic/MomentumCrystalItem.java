@@ -5,6 +5,7 @@ import net.cosmo.cosmosmagic.item.utils.AmmoManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -46,22 +47,22 @@ public class MomentumCrystalItem extends Item {
 		tooltip.add(Text.translatable("ONE TIME USE").formatted(Formatting.RED));
 	}
 	public static class Boost {
-		private static Vec3d getBoostVec(PlayerEntity playerEntity) {
-			Vec3d playerPos = playerEntity.getPos();
+		public static Vec3d getBoostVec(LivingEntity entity) {
+			Vec3d entityPos = entity.getPos();
 			assert MinecraftClient.getInstance().crosshairTarget != null;
 			Vec3d crosshairTarget = MinecraftClient.getInstance().crosshairTarget.getPos();
-			Vec3d playerVelocity = playerEntity.getVelocity();
-			Vec3d boostVec = new Vec3d((crosshairTarget.x - playerPos.x) * 1.5, -playerEntity.getPitch()/36, (crosshairTarget.z - playerPos.z) * 1.5);
-			if (playerEntity.getPitch() < 10 && playerEntity.getPitch() > -5) {
-				if (playerEntity.isOnGround()) boostVec = new Vec3d(boostVec.x , 1, boostVec.z); else boostVec = new Vec3d(boostVec.x , boostVec.y*2, boostVec.z);
+			Vec3d entityVelocity = entity.getVelocity();
+			Vec3d boostVec = new Vec3d((crosshairTarget.x - entityPos.x) * 1.5, -entity.getPitch()/36, (crosshairTarget.z - entityPos.z) * 1.5);
+			if (entity.getPitch() < 10 && entity.getPitch() > -5) {
+				if (entity.isOnGround()) boostVec = new Vec3d(boostVec.x , 1, boostVec.z); else boostVec = new Vec3d(boostVec.x , boostVec.y*2, boostVec.z);
 			}
-			if (abs(playerVelocity.x) >= 3) {
+			if (abs(entityVelocity.x) >= 3) {
 				boostVec = new Vec3d(0, boostVec.y, boostVec.z);
 			}
-			if (abs(playerVelocity.y) >= 3) {
+			if (abs(entityVelocity.y) >= 3) {
 				boostVec = new Vec3d(boostVec.x, 0, boostVec.z);
 			}
-			if (abs(playerVelocity.z) >= 3) {
+			if (abs(entityVelocity.z) >= 3) {
 				boostVec = new Vec3d(boostVec.x, boostVec.y, 0);
 			}
 			return boostVec;
