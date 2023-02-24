@@ -1,9 +1,4 @@
 {
-  "item.cosmos.studded_leather_helmet": "Diamond-Studded Leather Helmet",
-  "item.cosmos.studded_leather_chestplate": "Diamond-Studded Leather Tunic",
-  "item.cosmos.studded_leather_leggings": "Diamond-Studded Leather Pants",
-  "item.cosmos.studded_leather_boots": "Diamond-Studded Leather Boots",
-  "item.cosmos.diamond_tipped_iron_pickaxe": "Diamond-Tipped Iron Pickaxe",
   "item.cosmos.zombie_jerky": "Zombie Jerky",
   "item.cosmos.chaos_wand": "Chaos Wand",
   "item.cosmos.chaos_wand_potent": "Potent Chaos Wand",
@@ -24,8 +19,6 @@
   "item.cosmos.fireball_wand_potent": "Potent Fireball Wand",
   "item.cosmos.dragon_fireball_wand": "Draconian Fireball Wand",
 
-  "block.cosmos.cut_diamond_block": "Cut Diamond Block",
-  "block.cosmos.waxed_diamond_block": "Waxed Diamond Block",
   "block.cosmos.glowstone_bricks": "Glowstone Bricks",
   "block.cosmos.glowstone_brick_stairs": "Glowstone Brick Stairs",
   "block.cosmos.glowstone_brick_slab": "Glowstone Brick Slab",
@@ -44,11 +37,11 @@
   "item.minecraft.splash_potion.effect.momentum": "Splash Potion of Momentum",
   "item.minecraft.lingering_potion.effect.momentum": "Lingering Potion of Momentum",
   "effect.cosmos.momentum": "Momentum",
-  "item.minecraft.tipped_arrow.effect.sinkhole": "Arrow of Density",
-  "item.minecraft.potion.effect.sinkhole": "Potion of Density",
-  "item.minecraft.splash_potion.effect.sinkhole": "Splash Potion of Density",
-  "item.minecraft.lingering_potion.effect.sinkhole": "Lingering Potion of Density",
-  "effect.cosmos.sinkhole": "Density",
+  "item.minecraft.tipped_arrow.effect.density": "Arrow of Density",
+  "item.minecraft.potion.effect.density": "Potion of Density",
+  "item.minecraft.splash_potion.effect.density": "Splash Potion of Density",
+  "item.minecraft.lingering_potion.effect.density": "Lingering Potion of Density",
+  "effect.cosmos.density": "Density",
 
 
   "itemGroup.cosmos.general": "Cosmo's Magic"

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NLN",
+    "F#F",
+    "NLN"
+  ],
+  "key": {
+    "#": {
+      "item": "cosmos:fireball_wand"
+    },
+    "F": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    },
+    "N": {
+      "item": "cosmos:negative_energy_stone"
+    }
+  },
+  "result": {
+    "item": "cosmos:fireball_wand_potent",
+    "count": 1
+  }
+}

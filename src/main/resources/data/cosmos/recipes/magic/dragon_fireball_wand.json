@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FLF",
+    "N#N",
+    "LLL"
+  ],
+  "key": {
+    "#": {
+      "item": "cosmos:fireball_wand"
+    },
+    "F": {
+      "item": "minecraft:ender_eye"
+    },
+    "L": {
+      "item": "minecraft:obsidian"
+    },
+    "N": {
+      "item": "cosmos:negative_energy_stone"
+    }
+  },
+  "result": {
+    "item": "cosmos:fireball_wand_potent",
+    "count": 1
+  }
+}

@@ -38,27 +38,27 @@ public class ModItems {
 	public static final ChaosWandItem CHAOS_WAND = new ChaosWandItem(10, new Item.Settings()
 			.maxCount(1).rarity(Rarity.RARE).maxDamage(15));
 	public static final ChaosWandItem CHAOS_WAND_POTENT = new ChaosWandItem(200, new Item.Settings()
-			.maxCount(1).rarity(Rarity.EPIC).maxDamage(30));
+			.maxCount(1).rarity(Rarity.EPIC).maxDamage(25));
 	public static final ExplosiveWandItem EXPLOSIVE_WAND = new ExplosiveWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.RARE).maxDamage(20));
+			.maxCount(1).rarity(Rarity.RARE).maxDamage(10));
 
 	public static final TransfigureWandItem MAGMA_WAND = new TransfigureWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.RARE).maxDamage(15), Blocks.LAVA);
+			.maxCount(1).rarity(Rarity.RARE).maxDamage(5), Blocks.LAVA);
 	public static final TransfigureWandItem AQUA_WAND = new TransfigureWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.RARE).maxDamage(15), Blocks.WATER);
+			.maxCount(1).rarity(Rarity.RARE).maxDamage(10), Blocks.WATER);
 	public static final TransfigureWandItem MAGMA_WAND_POTENT = new TransfigureWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.EPIC).maxDamage(15), Blocks.LAVA);
+			.maxCount(1).rarity(Rarity.EPIC).maxDamage(10), Blocks.LAVA);
 	public static final TransfigureWandItem AQUA_WAND_POTENT = new TransfigureWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.EPIC).maxDamage(15), Blocks.WATER);
+			.maxCount(1).rarity(Rarity.EPIC).maxDamage(20), Blocks.WATER);
 
 	public static final FireballWandItem FIREBALL_WAND = new FireballWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.UNCOMMON).maxDamage(15));
+			.maxCount(1).rarity(Rarity.UNCOMMON).maxDamage(10));
 
 	public static final FireballWandItem FIREBALL_WAND_POTENT = new FireballWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.EPIC).maxDamage(20));
+			.maxCount(1).rarity(Rarity.EPIC).maxDamage(15));
 
 	public static final FireballWandItem DRAGON_FIREBALL_WAND = new FireballWandItem(new Item.Settings()
-			.maxCount(1).rarity(Rarity.RARE).maxDamage(25));
+			.maxCount(1).rarity(Rarity.RARE).maxDamage(20));
 
 	public static final MomentumCrystalItem MOMENTUM_CRYSTAL = new MomentumCrystalItem(new Item.Settings()
 			.maxCount(16).rarity(Rarity.RARE));

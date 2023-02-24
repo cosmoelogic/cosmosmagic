@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
     "###",
+    "#S#",
     "###"
   ],
   "key": {
     "#": {
-      "item": "minecraft:chain"
+      "item": "minecraft:glass"
+    },
+    "S": {
+      "item": "minecraft:soul_torch"
     }
   },
   "result": {
-    "item": "minecraft:chainmail_chestplate",
+    "item": "cosmos:neutral_energy_stone",
     "count": 1
   }
 }

@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#N#",
-    "#T#"
+    "IGI",
+    "GNG",
+    "IGI"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:redstone_block"
+    "I": {
+      "item": "minecraft:iron_ingot"
     },
     "N": {
       "item": "cosmos:neutral_energy_stone"
-    },
-    "T": {
-      "item": "minecraft:redstone_torch"
     }
   },
   "result": {

@@ -1,26 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " O ",
-    "#N#",
-    " / "
+    "DND",
+    "N#N",
+    "DND"
   ],
   "key": {
     "#": {
-      "item": "cosmos:creepy_essence"
+      "item": "cosmos:chaos_wand"
     },
-    "O": {
-      "item": "minecraft:tnt"
+    "D": {
+      "item": "minecraft:diamond"
     },
     "N": {
       "item": "cosmos:negative_energy_stone"
-    },
-    "/": {
-      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "cosmos:explosive_wand",
+    "item": "cosmos:chaos_wand_potent",
     "count": 1
   }
 }

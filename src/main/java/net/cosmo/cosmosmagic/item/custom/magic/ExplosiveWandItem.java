@@ -32,8 +32,6 @@ public class ExplosiveWandItem extends Item {
 		if (player.hasVehicle()) {
 			player.stopRiding();
 		}
-		if (AmmoManager.itemIsNotInInventory(player, Items.TNT)) return new TypedActionResult<>(ActionResult.FAIL, player.getStackInHand(hand));
-		AmmoManager.decrementItem(player, Items.TNT);
 		assert MinecraftClient.getInstance().crosshairTarget != null;
 		Vec3d crosshairTarget = MinecraftClient.getInstance().crosshairTarget.getPos();
 		player.damage(DamageSource.MAGIC, 2.0f);

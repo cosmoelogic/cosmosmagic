@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#P#",
+    "PNP",
+    "#P#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:water_bucket"
+    },
+    "P": {
+      "item": "cosmos:positive_energy_stone"
+    },
+    "N": {
+      "item": "cosmos:aqua_wand"
+    }
+  },
+  "result": {
+    "item": "cosmos:aqua_wand_potent",
+    "count": 1
+  }
+}

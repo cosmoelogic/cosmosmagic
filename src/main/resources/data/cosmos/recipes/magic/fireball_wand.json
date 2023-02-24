@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " O ",
-    "#N#",
+    "F F",
+    "FNF",
     " / "
   ],
   "key": {
-    "#": {
-      "item": "cosmos:creepy_essence"
-    },
-    "O": {
-      "item": "minecraft:tnt"
+    "F": {
+      "item": "minecraft:flint_and_steel"
     },
     "N": {
       "item": "cosmos:negative_energy_stone"
@@ -20,7 +17,7 @@
     }
   },
   "result": {
-    "item": "cosmos:explosive_wand",
+    "item": "cosmos:fireball_wand",
     "count": 1
   }
 }

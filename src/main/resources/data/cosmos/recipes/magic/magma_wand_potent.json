@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "#N#",
+    "P P"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lava_bucket"
+    },
+    "P": {
+      "item": "cosmos:positive_energy_stone"
+    },
+    "N": {
+      "item": "cosmos:aqua_wand"
+    }
+  },
+  "result": {
+    "item": "cosmos:magma_wand_potent",
+    "count": 1
+  }
+}

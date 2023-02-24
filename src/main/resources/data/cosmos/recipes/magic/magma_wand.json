@@ -1,26 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " O ",
-    "#N#",
+    " #  ",
+    " N ",
     " / "
   ],
   "key": {
     "#": {
-      "item": "cosmos:creepy_essence"
-    },
-    "O": {
-      "item": "minecraft:tnt"
+      "item": "minecraft:lava_bucket"
     },
     "N": {
-      "item": "cosmos:negative_energy_stone"
+      "item": "cosmos:positive_energy_stone"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "cosmos:explosive_wand",
+    "item": "cosmos:magma_wand",
     "count": 1
   }
 }
