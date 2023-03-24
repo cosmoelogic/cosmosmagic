@@ -23,6 +23,8 @@
     ],
     "client": [
       "net.cosmo.cosmosmagic.cosmosmagicclient"
+    ],
+    "fabric-datagen": [
     ]
   },
   "mixins": [

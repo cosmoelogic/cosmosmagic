@@ -6,7 +6,7 @@
   "item.cosmos.aqua_wand": "Aqua Wand",
   "item.cosmos.aqua_wand_potent": "Potent Aqua Wand",
   "item.cosmos.magma_wand": "Magma Wand",
-  "item.cosmos.magma_wand_potent": "Epic Magma Wand",
+  "item.cosmos.magma_wand_potent": "Potent Magma Wand",
   "item.cosmos.momentum_crystal": "Momentum Crystal",
   "item.cosmos.raw_momentum_crystal": "Raw Momentum Crystal",
   "item.cosmos.positive_energy_stone": "Positive Energy Stone",
@@ -18,6 +18,7 @@
   "item.cosmos.fireball_wand": "Fireball Wand",
   "item.cosmos.fireball_wand_potent": "Potent Fireball Wand",
   "item.cosmos.dragon_fireball_wand": "Draconian Fireball Wand",
+  "item.cosmos.grimoire": "Cosmo's Grimoire",
 
   "block.cosmos.glowstone_bricks": "Glowstone Bricks",
   "block.cosmos.glowstone_brick_stairs": "Glowstone Brick Stairs",

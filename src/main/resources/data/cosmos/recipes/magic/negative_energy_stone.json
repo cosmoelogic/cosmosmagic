@@ -11,6 +11,9 @@
     },
     "N": {
       "item": "cosmos:neutral_energy_stone"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {

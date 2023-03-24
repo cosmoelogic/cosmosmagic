@@ -1,5 +1,6 @@
 package net.cosmo.cosmosmagic.item.custom.magic;
 
+import net.cosmo.cosmosmagic.item.ModItems;
 import net.cosmo.cosmosmagic.item.utils.AmmoManager;
 import net.cosmo.cosmosmagic.item.utils.DurabilityManager;
 import net.minecraft.client.MinecraftClient;
@@ -9,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -18,6 +20,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static java.lang.Math.abs;
 
@@ -34,11 +37,24 @@ public class ExplosiveWandItem extends Item {
 		}
 		assert MinecraftClient.getInstance().crosshairTarget != null;
 		Vec3d crosshairTarget = MinecraftClient.getInstance().crosshairTarget.getPos();
-		player.damage(DamageSource.MAGIC, 2.0f);
-		world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 2.0f, false, World.ExplosionSourceType.NONE);
+		if (player.getMainHandStack().getItem().equals(ModItems.EXPLOSIVE_WAND)) world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 2.0f, false, World.ExplosionSourceType.TNT);
+		else if (player.getMainHandStack().getItem().equals(ModItems.GRIMOIRE))
+		{
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+			world.createExplosion(player, crosshairTarget.x, crosshairTarget.y, crosshairTarget.z, 100.0f, false, World.ExplosionSourceType.TNT);
+		}
 		double[] knockbackVel = getKnockbackVel(player, crosshairTarget);
 		player.addVelocity(knockbackVel[0], knockbackVel[1], knockbackVel[2]);
 		DurabilityManager.damageItem(player, hand, 1);
+		if (player.getMainHandStack().getItem().equals(ModItems.GRIMOIRE)) AmmoManager.decrementHolding(player, hand, true);
 		return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
 	}
 	private double[] getKnockbackVel(PlayerEntity playerEntity, Vec3d crosshairTarget) {

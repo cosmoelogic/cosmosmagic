@@ -23,8 +23,23 @@ public class AmmoManager {
 			}
 		}
 	}
+
+	public static void decrementItem(PlayerEntity player, Item item, boolean ignoreCreative) {
+		if (!ignoreCreative && player.isCreative()) return;
+		for (int i = 0; i < player.getInventory().size(); i++) {
+			if (player.getInventory().getStack(i).isOf(item)) {
+				player.getInventory().removeStack(i, 1);
+				break;
+			}
+		}
+	}
 	public static void decrementHolding(PlayerEntity player, Hand hand) {
 		if (player.isCreative()) return;
+		player.getStackInHand(hand).decrement(1);
+	}
+
+	public static void decrementHolding(PlayerEntity player, Hand hand, boolean ignoreCreative) {
+		if (!ignoreCreative && player.isCreative()) return;
 		player.getStackInHand(hand).decrement(1);
 	}
 }

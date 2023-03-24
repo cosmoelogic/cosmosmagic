@@ -13,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
@@ -31,6 +32,7 @@ public class FireballWandItem extends Item {
 	@Override
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand)
 	{
+		BlockHitResult blockHitResult = (BlockHitResult) player.raycast(5.0, 1, true);
 		ExplosiveProjectileEntity fireball = null;
 		Item holding = player.getMainHandStack().getItem();
 		DurabilityManager.damageItem(player, hand, 1);
@@ -38,9 +40,9 @@ public class FireballWandItem extends Item {
 		if (holding == FIREBALL_WAND_POTENT) {fireball = new FireballEntity(world, player, 0, 0, 0, 2);}
 		if (holding == DRAGON_FIREBALL_WAND) {fireball = new DragonFireballEntity(world, player, 0, 0, 0);}
 		assert fireball != null;
-		fireball.setPos(player.getX(), player.getY() + 1, player.getZ());
+		fireball.setPos(blockHitResult.getPos().getX(), blockHitResult.getPos().getY(), blockHitResult.getPos().getZ());
 		fireball.setYaw(player.getYaw());
-		fireball.setVelocity(player, player.getPitch(), player.getYaw(), 0, 1, 0);
+		//fireball.setVelocity(player, player.getPitch(), player.getYaw(), 0, 1, 0);
 		world.spawnEntity(fireball);
 		return TypedActionResult.success(player.getStackInHand(hand));
 	}

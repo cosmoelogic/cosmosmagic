@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "cosmos": "aztros:block/deepslate_momentum_crystal_ore" }
+    "": { "model": "cosmos:block/deepslate_momentum_crystal_ore" }
   }
 }

@@ -39,6 +39,7 @@ public class cosmosmagic implements ModInitializer {
 		ModItems.registerItems();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModPotions.registerPotionRecipes();
 		ModBlockItems.registerBlockItems();
 		//ModArmorMaterials.registerArmor();
 		//ModToolMaterials.registerTools();

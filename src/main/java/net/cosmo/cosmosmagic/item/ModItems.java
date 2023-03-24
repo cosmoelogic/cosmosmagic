@@ -60,6 +60,9 @@ public class ModItems {
 	public static final FireballWandItem DRAGON_FIREBALL_WAND = new FireballWandItem(new Item.Settings()
 			.maxCount(1).rarity(Rarity.RARE).maxDamage(20));
 
+	public static final ExplosiveWandItem GRIMOIRE = new ExplosiveWandItem(new Item.Settings()
+			.maxCount(1).rarity(Rarity.RARE).maxDamage(1));
+
 	public static final MomentumCrystalItem MOMENTUM_CRYSTAL = new MomentumCrystalItem(new Item.Settings()
 			.maxCount(16).rarity(Rarity.RARE));
 
@@ -83,6 +86,7 @@ public class ModItems {
 		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "fireball_wand"), FIREBALL_WAND);
 		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "fireball_wand_potent"), FIREBALL_WAND_POTENT);
 		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "dragon_fireball_wand"), DRAGON_FIREBALL_WAND);
+		Registry.register(Registries.ITEM, new Identifier(cosmosmagic.MOD_ID, "grimoire"), GRIMOIRE);
 
 		FuelRegistry.INSTANCE.add(Items.MUSHROOM_STEM, 200);
 		FuelRegistry.INSTANCE.add(Items.BROWN_MUSHROOM_BLOCK, 200);
